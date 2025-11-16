@@ -1,24 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* REMOVE dark mode override */
-html, body {
-  background-color: #e9eefb !important;
-  color: #0f1c3f !important;
+/* =============== BASE STYLE =============== */
+
+:root {
+  --background: #e9eefb;
+  --foreground: #000000;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-/* Fix input UI */
-input, select, textarea {
-  color: #0f1c3f;
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-
-/* Button styling fix */
-button {
-  cursor: pointer;
 }
